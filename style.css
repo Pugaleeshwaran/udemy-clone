@@ -14,6 +14,10 @@ font-family: "Gabarito", serif;
     justify-content: space-between;
     border-bottom: solid black 1px;
     gap: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    z-index: 100;
 }
 .navbar__one{
     color: #892de1;
@@ -33,6 +37,7 @@ font-family: "Gabarito", serif;
 .navbar__two input{
     border: none;
     width: 93%;
+    background-color: transparent;
 }
 .navbar__two input:focus{
     outline: none;
@@ -43,6 +48,28 @@ font-family: "Gabarito", serif;
     align-items: center;
     justify-content: center;
 }
+/* My learning*/
+.my-learning{
+    position:relative;
+    cursor: pointer;
+}
+.my-learning__popup{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    background-color: white;
+    width: 100px;
+    border: solid black 1px;
+    padding: 20px;
+    display: none;
+
+}
+.my-learning:hover .my-learning__popup{
+    display: block;
+    
+
+}
+
 .Category{
     display: flex;
     padding: 20px;
@@ -58,8 +85,27 @@ font-family: "Gabarito", serif;
     color: white;
     border-radius: 30px;
 }
+.main-image{
+    position: relative;
+}
 .main-image img{
     width: 100%;
+    z-index: 1;
+}
+.sale-image__offer-box{
+    padding: 20px;
+    width: 35%;
+    border: solid black 2px;
+    background-color: white;
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 70px;
+    top: 170px;
+}
+.sale-image__offer-box--element{
+    position: relative;
+    padding: 10px;
 }
 .recommended{
     padding: 20px;
